@@ -1,0 +1,59 @@
+.container-watch-product{
+  display: flex;
+  flex-direction: column;
+  max-width: 592px;
+  margin: auto;
+
+
+  .active-watch, .watch-others .watch-option{
+    border: 2px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .active-watch{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 336px;
+  }
+
+  .watch-others{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+    margin-top: 12px;
+
+    .watch-option{
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      height: 100px;
+
+      &.active{
+        border-color: #1E96D4;
+      }
+
+      &:hover:not(.active){
+        border-color: #B6BCC6;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+  .container-watch-product {
+    .active-watch{
+      height: 183px;
+      img{ height: 100%;}
+    }
+
+    .watch-others .watch-option{
+      height: 55px;
+      img{ height: 100%;}
+    }
+
+
+  }
+}

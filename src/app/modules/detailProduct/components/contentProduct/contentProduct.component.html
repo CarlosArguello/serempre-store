@@ -1,0 +1,136 @@
+<content-align-component
+  [incrementSpace]="true"
+>
+
+  <div>
+    <p>
+      <heading-component
+        size="sm"
+        color="tertiary"
+      >NEW RELEASE</heading-component>
+    </p>
+
+    <h1>
+      <heading-component
+        size="xl"
+      >MOMENTUM True Wireless 2</heading-component>
+    </h1>
+    <h2>
+      <heading-component
+        size="lg"
+        color="secondary"
+      >Earbuds that put sound first</heading-component>
+    </h2>
+  </div>
+
+  <div>
+    <p>
+      <heading-component
+        size="sm"
+        color="secondary"
+      >STARTING AT</heading-component>
+      <br>
+
+      <heading-component
+        size="xl"
+      >$295.95</heading-component>
+    </p>
+  </div>
+
+  <content-tab-component
+    [tabs]="tabs"
+    [content]="contentTabs"
+
+  ></content-tab-component>
+
+
+  <content-align-component
+    align="horizontal"
+    title="Choose your finish."
+  >
+
+    <interactive-button-component
+    (handleButton)="changeSelectedColor($event)"
+    [activeButton]="selectedColor == '1'"
+    value="1"
+    >
+
+      <content-article-component>
+        <span title>Ivory White</span>
+        For the past 75 years, Sennheiser has put sound first. The new MOMENTUM True.
+      </content-article-component>
+
+    </interactive-button-component>
+
+    <interactive-button-component
+    (handleButton)="changeSelectedColor($event)"
+    [activeButton]="selectedColor == '2'"
+    value="2"
+    >
+
+      <content-article-component>
+        <span title>Matte Black</span>
+        Of all of the celestial bodies that capture our attention and fascination as astronomers.
+      </content-article-component>
+
+    </interactive-button-component>
+
+  </content-align-component>
+
+
+  <content-align-component title="Would you like to add extended warranty coverage?.">
+
+    <interactive-button-component
+      (handleButton)="changeSelectedTime($event)"
+      [activeButton]="selectedTime == '1'"
+      value="1"
+    >
+      <content-article-component>
+        <span title>2 years coverage</span>
+        For the past 75 years, Sennheiser has put sound first.
+      </content-article-component>
+    </interactive-button-component>
+
+    <interactive-button-component
+      (handleButton)="changeSelectedTime($event)"
+      [activeButton]="selectedTime == '2'"
+      value="2"
+    >
+      <content-article-component>
+        <span title>3 years coverage</span>
+        For the past 75 years, Sennheiser has put sound first.
+      </content-article-component>
+    </interactive-button-component>
+
+  </content-align-component>
+
+
+
+  <content-align-component title="Features.">
+
+    <interactive-button-component
+      (handleButton)="changeSelectedFeature($event)"
+      [activeButton]="selectedFeature == '1'"
+      value="1"
+    >
+      <heading-component size="sm" font="bold">Voice Assistant support</heading-component>
+    </interactive-button-component>
+
+    <interactive-button-component
+      (handleButton)="changeSelectedFeature($event)"
+      [activeButton]="selectedFeature == '2'"
+      value="2"
+    >
+      <heading-component size="sm" font="bold">Customizable controls</heading-component>
+
+    </interactive-button-component>
+
+  </content-align-component>
+
+  <content-align-component title="Specifications.">
+    <list-item-component
+      [list]="specifications"
+    ></list-item-component>
+  </content-align-component>
+
+</content-align-component>

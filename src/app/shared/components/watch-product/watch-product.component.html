@@ -1,0 +1,16 @@
+<div class="container-watch-product">
+  <div class="active-watch">
+    <img [src]="pictures[activePicture].picture">
+  </div>
+  <div class="watch-others">
+    <div
+      *ngFor="let picture of pictures; let i = index"
+      [class.active]="activePicture == i"
+      (click)="handleActivePicture(i)"
+      class="watch-option"
+    >
+      <img [src]="picture.miniature" alt="">
+    </div>
+
+  </div>
+</div>

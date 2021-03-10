@@ -1,0 +1,28 @@
+.horizontal{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.vertical{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+[increment-space]{
+  grid-gap: 45px !important;
+}
+
+.title-content{
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 500px){
+  .horizontal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+}

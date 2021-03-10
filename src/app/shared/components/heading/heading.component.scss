@@ -1,0 +1,50 @@
+[size=xl]{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+[size=lg]{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+
+[size=md]{
+  font-size: 19.2px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+[size=sm]{
+  font-size: 13.3px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+[color=primary]{
+  color: #111111;
+}
+
+[color=secondary]{
+  color: #6B7280
+}
+
+[color=tertiary]{
+  color: #CB253C
+}
+
+[font=bold]{
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 500px){
+  [size=xl]{
+    font-size: 33.18px;
+  }
+
+  [size=lg]{
+    font-size: 27.65px;
+  }
+}

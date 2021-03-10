@@ -1,0 +1,14 @@
+<div class="content-tab">
+  <div class="tabs">
+    <button
+      *ngFor="let tab of tabs; let i = index"
+      [class.active]="activeTab == i"
+      (click)="handleActiveTab(i)"
+    >
+      {{ tab }}
+    </button>
+  </div>
+  <p class="content">
+    {{ content[activeTab] }}
+  </p>
+</div>

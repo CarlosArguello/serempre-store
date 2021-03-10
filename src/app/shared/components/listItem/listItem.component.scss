@@ -1,0 +1,27 @@
+ul{
+  border-top: 1px solid #EEEFF2;
+  border-bottom: 1px solid #EEEFF2;
+
+  li{
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px solid #EEEFF2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  ul li{
+    flex-direction: column;
+    strong{
+      margin-bottom: 10px;
+    }
+  }
+}

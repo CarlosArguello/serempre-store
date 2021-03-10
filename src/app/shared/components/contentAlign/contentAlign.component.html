@@ -1,0 +1,7 @@
+
+<h3 class="title-content">
+  <heading-component>{{ title }}</heading-component>
+</h3>
+<div [class.vertical]="align == 'vertical'" [class.horizontal]="align == 'horizontal'" [attr.increment-space]="incrementSpace">
+  <ng-content></ng-content>
+</div>

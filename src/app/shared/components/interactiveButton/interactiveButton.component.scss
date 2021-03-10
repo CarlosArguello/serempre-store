@@ -1,0 +1,15 @@
+.interaction-button{
+  border: 1px solid #EEEFF2;
+  border-radius: 5px;
+  padding: 22px 15px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover{
+    border: 2px solid #B6BCC6;
+  }
+
+  &.active{
+    border: 2px solid #1E96D4;
+  }
+}
